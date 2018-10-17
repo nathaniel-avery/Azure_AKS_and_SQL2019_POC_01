@@ -7,11 +7,11 @@ az login
 az group create -n rg-azk8sdemo -l eastus --tags Project=AzureK8s_Demo
 
 #Create Azure K8s setup in the RG
-az aks create -n AzureK8s-Demo -g rg-azk8sdemo -c 1 --generate-ssh-keys
+az aks create -n AzureK8s-Demo -g rg-azk8sdemo -c 3 --generate-ssh-keys
 
 #Get Credentials
 az aks get-credentials -n AzureK8s-Demo -g rg-azk8sdemo 
 
 #Add additional nodes count = 2 in this example
-az aks scale -n AzureK8s-Demo -g rg-azk8sdemo -c 2
+# az aks scale -n AzureK8s-Demo -g rg-azk8sdemo -c 2
 
