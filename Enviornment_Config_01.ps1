@@ -12,6 +12,5 @@ az aks create -n AzureK8s-Demo -g rg-azk8sdemo -c 3 --generate-ssh-keys
 #Get Credentials
 az aks get-credentials -n AzureK8s-Demo -g rg-azk8sdemo 
 
-#Add additional nodes count = 2 in this example
-# az aks scale -n AzureK8s-Demo -g rg-azk8sdemo -c 2
+
 
