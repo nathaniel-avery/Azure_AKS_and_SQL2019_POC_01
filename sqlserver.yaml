@@ -80,4 +80,4 @@ spec:
   ports:
   - {name: tds, port: 1433}
   selector: {name: mssql3, type: sqlservr}
-type: LoadBalancer
+  type: LoadBalancer
